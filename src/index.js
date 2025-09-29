@@ -1,34 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./CSS/components/loading.css";
-import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import "./CSS/components/button.css";
-import "./CSS/components/alert.css";
-import "./CSS/components/google.css";
-import "./pages/Auth/Auth.css";
-// if ypu install them
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/js/bootstrap.js';
-// react bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import MenuContext from "./context/MenuContext";
-import WindowContext from "./context/WindowContext";
-import "react-loading-skeleton/dist/skeleton.css";
-import CartChangeContext from "./context/CartChangerContext";
+import WindowSize from "./Context/WindowSize";
+import App from "./App";
+import "./website/Auth/auth.css";
+import IsOpen from "./Context/IsOpen";
+// # js file import (using webpack)
+import "react-image-gallery/styles/css/image-gallery.css";
+import IsChanger from "./Context/IsChanger";
+import BestChange from "./Context/BestChange";
+// animate css
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <WindowContext>
-      <MenuContext>
-        <CartChangeContext>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </CartChangeContext>
-      </MenuContext>
-    </WindowContext>
+    <BrowserRouter>
+      <IsOpen>
+        <WindowSize>
+        <IsChanger>
+        <BestChange>
+          <App />
+        </BestChange>
+        </IsChanger>
+        </WindowSize>
+      </IsOpen>
+    </BrowserRouter>
   </React.StrictMode>
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

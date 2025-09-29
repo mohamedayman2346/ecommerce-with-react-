@@ -1,0 +1,26 @@
+.custom-pagination{
+    list-style: none;
+    border: 2px solid gray;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+
+.custom-pagination:hover{
+    border: 2px solid #038edc;
+}
+
+.pagination-tag-anchor{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+
+.pagination-tag-anchor:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}

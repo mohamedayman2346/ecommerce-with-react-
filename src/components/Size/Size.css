@@ -1,0 +1,21 @@
+.size{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.size li{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.size .active{
+    background-color: rgb(235, 48, 48);
+}
+.size .active:hover{
+    background-color: rgb(235, 48, 48);
+}

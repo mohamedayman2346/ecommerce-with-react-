@@ -1,0 +1,32 @@
+/* input style */
+.auth-form .form-control {
+  border: none !important;
+  border-bottom: 2px solid #ced4da !important;
+  border-radius: 0 !important;
+  background-color: gray !important;
+}
+
+.auth-form .form-control:focus {
+  box-shadow: none !important;
+}
+
+.auth-form .form-control:focus:invalid {
+  color: red;
+  border-color: red !important;
+}
+
+.auth-form .form-control:valid {
+  color: green;
+  border-color: green !important;
+}
+
+/* label style */
+.auth-form .form-label {
+  color: rgba(0, 0, 0, 0.568);
+  transition: 0.3s;
+}
+
+.auth-form .form-control:focus + .form-label,
+.auth-form .form-control:valid + .form-label {
+  top: -20px !important;
+}

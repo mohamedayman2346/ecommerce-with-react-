@@ -1,13 +1,15 @@
 import axios from "axios";
-import { baseURL } from './api';
-import Cookie from 'universal-cookie';
+import { baseURL } from "./Api";
+import Cookie from "universal-cookie";
 
-const cookie = new Cookie();
-const token = cookie.get('e-commerce')
 
-export const Axios = axios.create({
-    baseURL: baseURL ,
-    headers: {
-        Authorization: `Bearer ${token}`,
-    }
-})
+    
+    const cookie = new Cookie();
+    const token = cookie.get('ecommerce');
+    
+    export const Axios =  axios.create({
+        baseURL: baseURL,
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    })

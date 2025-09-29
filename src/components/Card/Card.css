@@ -1,0 +1,24 @@
+/* about page header card */
+.card{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+ .hover:hover{
+ background-color: rgb(234, 71, 71);
+    color: white;
+ }
+
+ .hover svg{
+    box-shadow: 0 0 0 10px gray;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+ }
+
+  .hover:hover svg{
+     box-shadow: 0 0 0 10px rgba(245, 245, 245, 0.501);
+     background-color: white;
+     color: black;
+  }
